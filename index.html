@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apartamento para Temporada em Ubatuba</title>
+    <link rel="stylesheet" href="style.css">
+
+   
+
+</head>
+<body>
+
+    <div class="navbar">
+        <div> Apartamento Ubatuba </div>
+        <div>
+          <a href="#i">Sobre</a>
+          <a href="#f">Fotos</a>
+          <a href="#c">Reservar</a>
+        </div>
+      </div>
+
+    <div class="container">
+        <section id="i"> 
+        <header>
+            <h1>Apartamento para Temporada em Ubatuba - Itaguá</h1>
+        </header>
+
+
+        <h2>Nosso Apartamento</h2>
+       <h4> <p>Localizado na Rua Mar Tireno 91, ao lado do aeroporto, perto do aquário, roda gigante e Projeto Tamar, na praia de Itaguá, bem no centro de Ubatuba.</p>
+        <ul>
+            <li>2 quartos, 2 banheiros;</li>
+            <li>Acomoda até 8 pessoas;</li>
+            <li>Piscina, piscina aquecida, academia, salão de jogos e área de lazer;</li>
+            <li>Ar condicionado, churrasqueira (dentro e fora do ap), frente para a piscina;</li>
+            <li>Segurança 24h, 2 vagas de garagem.</li>
+        </ul>
+       </h4>
+        </section>
+
+
+
+
+        <section id="f">
+        <h3>Fotos do Apartamento</h3>
+
+        <center>
+            
+                    <img src="assets/sala.jpg">
+                  
+                    <img src="assets/sala de tv.jpg">
+                 
+                    <img src="assets/sala de jantar.jpg">
+
+                    <img src="assets/cozinha.jpg">
+
+                    <img src="assets/banheiro corredor.jpg">
+
+                    <img src="assets/quarto 1.jpg">
+
+                    <img src="assets/quarto 2.jpg">
+
+                    <img src="assets/sacada.jpg">
+
+                    <img src="assets/sacada2.jpg">
+        </center>
+        <h3>Áreas do prédio</h3>
+        <center>
+                    <img src="assets/backgroundpiscina.jpg">
+
+                    <img src="assets/piscinaquente.jpeg">
+
+                    <img src="assets/área de festa.jpg">
+
+                    <img src="assets/churrasqueira.jpg">
+
+                    <img src="assets/academia.jpg">
+                 
+                
+              
+        </center>
+        </section>
+
+        <h2>Descubra Ubatuba</h2>
+        <p> <h4> Ubatuba é uma cidade litorânea localizada no estado de São Paulo, conhecida por suas belas praias, natureza preservada e clima tropical. Com mais de 100 praias espalhadas por sua extensa costa e mais de 20 ilhas, Ubatuba atrai turistas em busca de sol, mar e aventuras, oferecendo opções para todos os gostos, desde praias calmas e familiares até locais ideais para a prática de surfe. Além do litoral deslumbrante, a cidade é cercada pela Mata Atlântica, proporcionando trilhas, cachoeiras e uma rica biodiversidade. Ubatuba também se destaca pela sua cultura caiçara, refletida na culinária típica e nas tradições locais. É um destino perfeito para quem busca contato com a natureza e momentos inesquecíveis em meio a paisagens paradisíacas. </h4> </p>
+
+
+        <section id="c">
+
+        <h2>Escolha suas Datas</h2>
+       
+        <label for="checkin">Check-in:</label>
+  <input type="date" id="checkin">
+  <br>
+  <label for="checkout">Check-out:</label>
+  <input type="date" id="checkout">
+  <br>
+  <button onclick="enviarWhatsApp()">Reservar pelo WhatsApp</button>
+
+        </section>
+
+
+
+        <section class="proprietario">
+            <img src="assets/mae.jpg">
+            <h3>Andrea Cara</h3>
+            <p>Oi! Sou Andrea Cara, responsável pela sua hospedagem em Ubatuba. Estou à disposição para tornar sua estadia inesquecível!</p>
+          </section>
+
+
+        <p>Siga-nos nas redes sociais:<br>
+      
+          <a href="https://web.facebook.com/andreacristinaubatuba?mibextid=ZbWKwL&_rdc=1&_rdr#" target="_blank">Facebook</a> | <a href="https://www.instagram.com/andrea_ubatuba/" target="_blank">Instagram</a></p>
+      
+        </div>
+
+
+    <footer>
+        <p>&copy; 2025 Apartamento Temporada Ubatuba</p>
+    </footer>
+
+
+     
+    <script>
+        function enviarWhatsApp() {
+          const checkin = document.getElementById('checkin').value;
+          const checkout = document.getElementById('checkout').value;
+          if (checkin && checkout) {
+            const mensagem = `Olá, gostaria de reservar o apartamento de temporada em Ubatuba de ${checkin} até ${checkout},  Ainda está disponível?`;
+            const numero = '5514981356451';
+            const link = `https://wa.me/${numero}?text=${encodeURIComponent(mensagem)}`;
+            window.open(link, '_blank');
+          } else {
+            alert('Por favor, selecione as datas de check-in e check-out.');
+          }
+        }
+      </script>
+
+</body>
+</html>
